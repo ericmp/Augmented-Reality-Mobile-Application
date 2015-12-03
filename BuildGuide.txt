@@ -1,0 +1,45 @@
+Build Instructions:
+
+1. Start the server:
+	a. Download the SSH client PuTTY from the following link: http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
+	b. After downloading the application, launch the exe file from your downloaded location.
+	c. Once PuTTY is open, type "ericruby.cloudapp.net" in the "Host Name" field, type 22 in the "Port" field, then click "Open".
+	d. Once the command prompt opens and you are asked for the username, type "azureuser" and hit enter on your keyboard. For the password, type "RubyAttempt1" and hit enter on your keyboard.
+	e. After successfully logging in, type the following command "cd my*", then type "rails s". The server should launch and is now live.
+	f. In the GitHub link I've pasted in step 4a, the folder "myApp" contains the server code used for the rails server for your convenience.
+2. Download and install Unity3D:
+	a. Click the following link to download 32-bit Unity3D: http://netstorage.unity3d.com/unity/f3d16a1fa2dd/Windows32EditorInstaller/UnitySetup32-5.2.3f1.exe
+	b. Navigate to the folder that houses the downloaded executable.
+	c. Run "UnitySetup32-5.2.3fl.exe"
+	d. If asked to run the application with administrator rights, click yes.
+	e. Proceed and complete the set up instructions (No need to change custom install paths).
+3. Download the Android SDK:
+	a. Click the following link to download the Android SDK: http://dl.google.com/android/installer_r24.4.1-windows.exe
+	b. Navigate to the folder that houses the downloaded executable.
+	c. Run "installer_r24.4.1-windows.exe"
+	d. If asked to run the application with administrator rights, click yes.
+	e. Proceed and complete the set up instructions (No need to change custom install paths).
+	f. Remember the installation path for the Android SDK as it will be important later on.
+4a. Download and build A.R.M.A.: (If you want to directly install the application on your phone without setting up the environment, skip to step 4b.)
+	a. Navigate to the following link: https://github.com/ericmp/Augmented-Reality-Mobile-Application
+	b. Click "Download ZIP" on the right side of the page.
+	c. Navigate to the folder that houses the downloaded zip file and extract the files.
+	d. Open the extracted folder and navigate to the following directory: "\ARMA\Assets\Scenes\"
+	e. Double click MainMenu.unity to launch the scene.
+	f. After Unity opens, click "File" then "Build Settings"
+	g. Ensure that there are three scenes selected in the "Scenes in Build" window. If not and the window is empty, click the "Add Current" button. Select the Project tab, then the scenes folder. Select the "Play" scene, and repeat the same steps to 
+	   add this scene. Repeat for the "HighScores" scene.
+	h. In the Build Settings menu, select "Build And Run". If Unity asks you for your Android SDK filepath, navigate to the installation path noted in step 3f.
+	i. Once Unity finishes compiling, A.R.M.A. should be running on your mobile device.
+4b. Install A.R.M.A. directly on your phone without using Unity: (Move onto step 4 if you have completed step 4a.)
+	a. Ensure you have an Android device plugged in through USB and have debugging enabled over USB
+		- To enable "Debugging Mode" on an Android device, please see this link: http://developer.android.com/tools/device.html
+	b. Navigate to the following link: https://github.com/ericmp/Augmented-Reality-Mobile-Application
+	c. Click "Download ZIP" on the right side of the page.
+	d. Navigate to the folder that houses the downloaded zip file and extract the files.
+	e. Open the extracted folder and navigate to the following directory: "\ARMA\"
+	f. Locate the file called "a.apk", then drag the file into your Android device's directory. Please take note of where you place the apk file on your device.
+	g. Using your device's built-in explorer, or an explorer downloaded from the Google Play Store, navigate to the apk file.
+	h. Run the apk and install the A.R.M.A. application.
+	i. Open your Apps folder on your mobile device, locate A.R.M.A., and launch the app to begin playing.
+	
